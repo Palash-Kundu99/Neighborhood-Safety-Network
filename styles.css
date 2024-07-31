@@ -1,0 +1,353 @@
+body {
+    background-image: url('../images/report.jpg');
+    background-size: cover; /* Make sure the background covers the entire page */
+    background-repeat: no-repeat; /* Prevent the image from repeating */
+    background-position: center; /* Center the background image */
+}
+
+
+/* Navbar Styling */
+.navbar {
+    margin-bottom: -0.25; /* Remove margin below navbar */
+    padding: 1rem 1rem; /* Increased padding for a taller navbar */
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    position: relative;
+    background-color: #f8f9fa; /* White background for a clean look */
+    border-bottom: 1px solid #e0e0e0; /* Light border for separation */
+}
+.header-wrapper {
+    position: relative; /* Container for relative positioning */
+}
+
+.heading {
+    font-size: 44px; /* Text size */
+    color: #ffffff; /* Text color */
+    text-shadow: 0 0 20px rgba(246, 16, 16, 0.8), 
+                 0 0 20px rgba(0, 0, 0, 0.6), 
+                 0 0 80px rgba(162, 13, 13, 0.915); /* Text shadow effect */
+    position: absolute; /* Overlap the navbar */
+    top: 20px; /* Adjust based on the height of your navbar */
+    left: 50%; /* Center horizontally */
+    transform: translateX(-50%); /* Center horizontally */
+    text-align: center; /* Center text */
+    z-index: 10; /* Ensure heading is above the navbar */
+}
+
+.navbar-custom {
+    position: relative; /* Ensure correct stacking */
+    z-index: 1; /* Navbar below the heading */
+}
+
+
+
+
+.navbar-brand {
+    font-weight: bold;
+    font-size: 1rem; /* Reduced font size */
+}
+
+/* .navbar-nav .nav-link {
+    margin-right: 15px; 
+    font-size: 0.875rem; 
+    transition: color 0.2s ease, transform 0.2s ease; 
+    position: relative;
+}
+
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link.active {
+    color: #007bff; 
+    transform: scale(1.05); 
+} */
+
+/* .navbar-nav .nav-link:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 2px;
+    width: 100%;
+    background: #007bff; 
+    transform: scaleX(0);
+    transform-origin: bottom right;
+    transition: transform 0.2s ease;
+} */
+
+/* .navbar-nav .nav-link:hover:before,
+.navbar-nav .nav-link.active:before {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+} */
+
+/* Form Container Styling */
+.form-container {
+    max-width: 900px;
+    margin: 30px auto;
+    padding: 30px;
+    background-color: #ffffff; /* White */
+    border-radius: 12px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+    border: 1px solid #dee2e6; /* Light Gray Border */
+    animation: fadeIn 0.5s ease-out;
+}
+
+/* Animation for form container */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Flexbox Container Styling */
+.container .row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.container .col-md-6 {
+    flex: 1 1 50%;
+    max-width: 50%;
+    padding: 10px;
+}
+
+/* Card Styling */
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 400px;
+    border: 1px solid #dee2e6; /* Light Gray Border */
+    border-radius: 12px;
+    width: 100%;
+    margin: 15px auto; /* Increased margin for spacing */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #f4f4f4; /* Light Gray Background */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+}
+
+.card-body {
+    padding: 20px;
+    font-size: 16px;
+    flex: 1 1 auto;
+}
+
+.card-title {
+    margin-bottom: 1rem;
+    color: #003366; /* Deep Blue */
+    font-size: 1.25rem;
+}
+
+/* Form Element Styling */
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+.form-control {
+    border-radius: 8px;
+    border: 1px solid #ced4da;
+    background-color: #ffffff;
+    font-size: 14px;
+    padding: 12px;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.form-control:focus {
+    border-color: #003366; /* Deep Blue */
+    box-shadow: 0 0 0 0.2rem rgba(0, 51, 102, 0.25); /* Deep Blue Shadow */
+}
+
+/* Custom Time Input */
+.custom-time {
+    position: relative;
+    display: inline-block;
+}
+
+.custom-time input[type="time"] {
+    padding-right: 25px;
+    max-width: 140px;
+}
+
+.custom-time::after {
+    content: '\f017';
+    font-family: FontAwesome;
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #6c757d; /* Gray */
+}
+
+/* Button Styling */
+.btn-custom-primary{
+    background-color: #003366; /* Deep Blue */
+    border-color: #003366;
+    border-radius: 8px;
+    padding: 12px 24px;
+    font-size: 14px;
+    transition: background-color 0.3s, border-color 0.3s;
+    color: #ffffff;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.btn-custom-primary:hover {
+    color: #000000;
+    background-color: #ffffff; /* Deep Blue */
+    border-color: #003366;
+}
+.btn-search{
+    background-color: #003366; /* Deep Blue */
+    border-color: #003366;
+    border-radius: 8px;
+    padding: 12px 24px;
+    font-size: 8px;
+    transition: background-color 0.3s, border-color 0.3s;
+    color: #ffffff;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+
+}
+.btn-search:hover{
+    color: #000000;
+    background-color: #ffffff; /* Deep Blue */
+    border-color: #003366;
+
+}
+/* Map Styling */
+#map {
+    height: 200px;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    border: 1px solid #ced4da;
+}
+
+/* Input Group Styling */
+.input-group {
+    display: flex;
+    align-items: center;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* .input-group-append img {
+    width: 16px;
+    height: 16px;
+} */
+
+/* Pagination Styling */
+.pagination {
+    justify-content: center;
+}
+
+.page-link {
+    color: #003366; /* Deep Blue */
+}
+
+.page-link:hover {
+    color: #002244; /* Darker Blue */
+}
+
+.page-item.active .page-link {
+    background-color: #003366; /* Deep Blue */
+    border-color: #003366;
+}
+
+/* Alert Styling */
+.alert {
+    border-radius: 8px;
+    padding: 15px;
+    font-size: 14px;
+}
+
+.alert-success {
+    background-color: #d4edda; /* Light Green */
+    border-color: #c3e6cb; /* Slightly Darker Green */
+    color: #155724; /* Dark Green */
+}
+
+.alert-danger {
+    background-color: #f8d7da; /* Light Coral */
+    border-color: #f5c6cb; /* Slightly Darker Coral */
+    color: #721c24; /* Dark Coral */
+}
+
+/* Table Styling */
+.table {
+    background-color: #ffffff; /* White Background */
+    border-radius: 10px;
+    margin-top: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.table th,
+.table td {
+    vertical-align: middle;
+}
+
+.table thead th {
+    border-bottom: 2px solid #dee2e6; /* Light Gray Border */
+}
+
+/* Adjust the navbar brand image if needed */
+.navbar-brand img {
+    max-height: 50px;
+    width: auto;
+}
+/* Footer Styles */
+.footer {
+    background-color: #f8f9fa;
+    padding: 10px 0; /* Reduced padding */
+    border-top: 1px solid #e9ecef;
+}
+
+.footer h5 {
+    color: #343a40;
+    margin-bottom: 5px; /* Reduced margin */
+    font-size: 16px; /* Smaller font size */
+}
+
+.footer ul {
+    list-style-type: none;
+    padding-left: 0;
+    margin: 0; /* Removed margin for list */
+}
+
+.footer ul li {
+    margin-bottom: 5px; /* Reduced margin */
+    color: #6c757d;
+    font-size: 14px; /* Smaller font size */
+}
+
+.footer ul li a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.footer ul li a:hover {
+    text-decoration: underline;
+}
+
+.footer .text-center {
+    margin-top: 10px; /* Reduced margin */
+    color: #6c757d;
+    font-size: 14px; /* Smaller font size */
+}
+.social-icons-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(40px, 1fr)); /* Adjust column size */
+    gap: 2px; /* Space between icons */
+    justify-content: center; /* Center align icons */
+}
+.col-md-4 {
+    margin-left: 130px; /* Adjust this value to move it further or closer */
+}

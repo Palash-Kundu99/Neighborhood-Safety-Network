@@ -1,0 +1,178 @@
+/* General Styling */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: url('../images/back.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: #333333; /* Dark Gray */
+    margin: 0;
+    padding: 0;
+}
+/* Footer Styles */
+.footer {
+    background-color: #f8f9fa;
+    padding: 10px 0; /* Reduced padding */
+    border-top: 1px solid #e9ecef;
+}
+
+.footer h5 {
+    color: #343a40;
+    margin-bottom: 5px; /* Reduced margin */
+    font-size: 16px; /* Smaller font size */
+}
+
+.footer ul {
+    list-style-type: none;
+    padding-left: 0;
+    margin: 0; /* Removed margin for list */
+}
+
+.footer ul li {
+    margin-bottom: 5px; /* Reduced margin */
+    color: #6c757d;
+    font-size: 14px; /* Smaller font size */
+}
+
+.footer ul li a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.footer ul li a:hover {
+    text-decoration: underline;
+}
+
+.footer .text-center {
+    margin-top: 10px; /* Reduced margin */
+    color: #6c757d;
+    font-size: 14px; /* Smaller font size */
+}
+.social-icons-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(40px, 1fr)); /* Adjust column size */
+    gap: 2px; /* Space between icons */
+    justify-content: center; /* Center align icons */
+}
+/* Navbar Styling */
+.navbar {
+    margin-bottom: 0; /* Remove margin below navbar */
+    padding: 0.5rem 1rem; /* Reduced padding */
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    position: relative;
+    background-color: #f8f9fa; /* White background for a clean look */
+    border-bottom: 1px solid #e0e0e0; /* Light border for separation */
+}
+
+.navbar-brand {
+    font-weight: bold;
+    font-size: 1rem; /* Reduced font size */
+}
+
+.navbar-nav .nav-link {
+    margin-right: 15px; /* Reduced margin */
+    font-size: 0.875rem; /* Slightly smaller font size */
+    transition: color 0.2s ease, transform 0.2s ease; /* Faster transition */
+    position: relative;
+}
+
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link.active {
+    color: #007bff; /* Professional blue */
+    transform: scale(1.05); /* Slight zoom effect */
+}
+
+.navbar-nav .nav-link:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 2px;
+    width: 100%;
+    background: #007bff; /* Blue underline */
+    transform: scaleX(0);
+    transform-origin: bottom right;
+    transition: transform 0.2s ease;
+}
+
+.navbar-nav .nav-link:hover:before,
+.navbar-nav .nav-link.active:before {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+
+.carousel-container {
+    position: relative;
+    width: 100%;
+    max-width: 1500px; /* Adjust to your preferred width */
+    margin: auto;
+    overflow: hidden;
+}
+
+.carousel {
+    position: relative;
+    width: 100%;
+    display: flex;
+}
+
+.carousel-inner {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.carousel-item {
+    min-width: 100%;
+    box-sizing: border-box;
+}
+
+.carousel-item img {
+    width: 100%;
+    display: block;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    position: absolute;
+    top: 50%;
+    width: 5%;
+    height: 50px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    text-align: center;
+    line-height: 50px;
+    font-size: 24px;
+    cursor: pointer;
+    transform: translateY(-50%);
+    border: none;
+}
+
+.carousel-control-prev {
+    left: 0;
+}
+
+.carousel-control-next {
+    right: 0;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    display: inline-block;
+    background: white;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+}
+.heading {
+    font-size: 50px; /* Text size */
+    color: #ffffff; /* Text color */
+    text-shadow: 0 0 20px rgba(93, 252, 90, 0.8), 
+                 0 0 20px rgba(0, 0, 0, 0.6), 
+                 0 0 80px rgba(5, 57, 4, 0.772); /* Text shadow effect */
+    position: absolute; /* Overlap the navbar */
+    top: 20px; /* Adjust based on the height of your navbar */
+    right: 20px; /* Position from the right */
+    text-align: right; /* Align text to the right */
+    z-index: 10; /* Ensure heading is above the navbar */
+}
+

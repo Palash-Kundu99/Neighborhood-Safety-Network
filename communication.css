@@ -1,0 +1,199 @@
+/* General styles */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-image: url('../images/wall.jpg'); /* Set your background image */
+}
+
+.chat-container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.chat-header {
+  background-color: #128c7e; /* WhatsApp green */
+  color: white;
+  padding: 15px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.chat-header h2 {
+  margin: 0;
+  font-size: 1.5em;
+}
+
+.logout-btn {
+  background-color: #d32f2f; /* Red for logout */
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 0.9em;
+}
+
+.logout-btn:hover {
+  background-color: #c62828;
+}
+
+.chat-content {
+  display: flex;
+  flex: 1;
+  overflow: hidden;
+  padding: 20px; /* Added padding for spacing */
+}
+
+.users-list {
+  width: 300px; /* Fixed width for users list */
+  background-color: #ffffff;
+  border-right: 1px solid #e0e0e0;
+  padding: 15px;
+  box-sizing: border-box;
+  overflow-y: auto;
+}
+
+.users-list h3 {
+  margin-top: 0;
+  color: #333;
+  font-size: 1.2em;
+}
+
+#users {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+#users li {
+  display: flex;
+  align-items: center;
+  padding: 10px 0;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+#users li:last-child {
+  border-bottom: none;
+}
+
+.user-dp {
+  width: 33px;
+  height: 33px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-right: 10px;
+  border: 2px solid #128c7e; /* Matching border color */
+}
+
+#users span {
+  font-size: 16px;
+  color: #555;
+}
+
+.chat-box {
+  flex: 1; /* Allow the chat box to grow and fill available space */
+  max-width: 75%; /* Set a maximum width to make it wider */
+  display: flex;
+  flex-direction: column;
+  background-color: #ffffff; /* White background for contrast */
+  padding: 20px;
+  box-sizing: border-box;
+  overflow: hidden;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-left: 20px; /* Space between users list and chat box */
+}
+
+.messages {
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;
+  padding: 5px; /* Padding for the container */
+  background-color: #f0f0f0; /* Light gray background for messages */
+  border-radius: 8px;
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
+  height: 100%; /* Ensure it takes up the full height of its container */
+}
+
+/* Adjust styles for message elements */
+.message {
+  font-size: 15px; /* Smaller font size for messages */
+  padding: 4px 8px; /* Reduced padding inside each message */
+  margin-bottom: 4px; /* Reduced margin between messages */
+  background-color: #fff; /* Background color for individual messages */
+  border-radius: 20px; /* Rounded corners for individual messages */
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1); /* Optional: subtle shadow for individual messages */
+}
+
+
+.message.sent {
+  background-color: #128c7e; /* WhatsApp green for sent messages */
+  color: white;
+  align-self: flex-start; /* Align sent messages to the left */
+  margin-left: auto; /* Push message to the left */
+  margin-right: 0;
+}
+
+.message.received {
+  background-color: #ffffff; /* White background for received messages */
+  color: #333;
+  align-self: flex-end; /* Align received messages to the right */
+  margin-right: auto; /* Push message to the right */
+  margin-left: 0;
+}
+
+#messageForm {
+  display: flex;
+  margin-top: 10px;
+  border-radius: 20px;
+}
+
+#messageInput {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 1em;
+}
+
+button {
+  background-color: #128c7e; /* WhatsApp green for button */
+  border: none;
+  color: white;
+  padding: 10px 15px;
+  margin-left: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1em;
+}
+
+button:hover {
+  background-color: #0d6e4e; /* Darker green for hover */
+}
+
+.logged-in-user {
+  margin-top: 20px;
+  padding: 15px;
+  background-color: #dcf8c6;
+  border: 1px solid #e0e0e0;
+  border-radius: 5px;
+  text-align: center;
+  font-size: 1.5em; /* Increased text size */
+  font-weight: bold;
+}
+
+.footer {
+  background-color: #128c7e; /* WhatsApp green for footer */
+  color: white;
+  padding: 10px; /* Increased padding for better spacing */
+  text-align: center;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+  font-size: 0.9em; /* Slightly smaller font size */
+}

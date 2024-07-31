@@ -1,0 +1,43 @@
+/* neighbour.css */
+
+/* Ensure the cards have a margin for spacing */
+.card {
+    margin: 10px;
+    border-radius: 8px; /* Rounded corners */
+    overflow: hidden; /* Ensure rounded corners work well */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    transition: transform 0.2s ease, box-shadow 0.2s ease; /* Smooth transition for hover effects */
+  }
+  
+  .card:hover {
+    transform: translateY(-5px); /* Lift card on hover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Enhance shadow on hover */
+  }
+  
+  /* Style for card image and video */
+  .card-img-top {
+    border-bottom: 1px solid #ddd; /* Divider line between image/video and text */
+  }
+  
+  /* Style for card body */
+  .card-body {
+    padding: 15px; /* Add padding around text */
+  }
+  
+  .card-title {
+    font-size: 1.25rem; /* Larger font size for title */
+    margin-bottom: 0.75rem; /* Space below title */
+  }
+  
+  .card-text {
+    font-size: 1rem; /* Standard font size for text */
+    color: #555; /* Slightly muted text color */
+  }
+  
+  /* Responsive design for card images/videos */
+  @media (max-width: 768px) {
+    .card {
+      width: 100%; /* Full width on small screens */
+    }
+  }
+  
