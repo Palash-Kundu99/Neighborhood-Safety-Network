@@ -5,10 +5,15 @@ The Neighborhood Safety Network is a community-focused platform designed to enha
 Key Features:
 
 Incident Reporting: Submit details on safety issues with options for photos.
+
 Map-Based Visualization: View and filter incidents on interactive maps.
+
 Safety Tips: Access advice on security and emergency preparedness.
+
 Neighborhood Watch Coordination: Manage patrols, tasks, and communication.
+
 Communication Tools: Built-in messaging and alert notifications.
+
 Technical Specs:
 
 Backend (PHP): Manages incident reporting, user authentication, and database interaction.
